@@ -1,0 +1,42 @@
+[
+  {
+    "id" : 1,
+    "title": "Ketan Parekh",
+    "statusValue": "done",
+    "category": "Wash medium",
+    "deliveryTime": "Wed 7-13-22 10:00",
+    "etaTime": "1 Hr",
+    "address": "Akademevej 15,4 th 2800 Kgs. Lyngby",
+    "distance": "0.6 Km"
+  },
+  {
+    "id" : 1,
+    "title": "Mads Koldings",
+    "statusValue": "todo",
+    "category": "Washing Cleanning",
+    "deliveryTime": "Thu 7-14-22 10:00",
+    "etaTime": "3 Hr",
+    "address": "Sorgenferd 54 2800 Kgs. Lyngby",
+    "distance": "1.2 Km"
+  },
+  {
+    "id" : 1,
+    "title": "Jhon Staman",
+    "statusValue": "rejected",
+    "category": "Wash light",
+    "deliveryTime": "Thu 7-14-22 11:00",
+    "etaTime": "30 min",
+    "address": "Gohankel 15,4 th 2800 Kgs. Lyngby",
+    "distance": "3.0 Km"
+  },
+  {
+    "id" : 1,
+    "title": "Midas Prince",
+    "statusValue": "todo",
+    "category": "Cleaning medium",
+    "deliveryTime": "Fri 7-15-22 10:00",
+    "etaTime": "1 Hr",
+    "address": "Sorgenferd 54 2800 Kgs. Lyngby",
+    "distance": "1.0 Km"
+  }
+]
