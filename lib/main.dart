@@ -115,6 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 return ListView.builder(
                   itemCount: newdata.items.length,
                   scrollDirection: Axis.vertical,
+                  physics: const BouncingScrollPhysics(),
                   shrinkWrap: true,
                   itemBuilder: (BuildContext cntx,int index) => CalenderItemWidget(todoItemsModel: newdata.items[index]),
                 );

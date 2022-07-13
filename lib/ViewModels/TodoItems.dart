@@ -25,7 +25,7 @@ class TodoItems extends GetxController {
     final String response = await rootBundle.loadString('jsons/todoItemlist.json');
     final data = await json.decode(response);
     _todoitems.addAll(List<TodoItemsModel>.from(data.map((i) => TodoItemsModel.fromJson(i))).toList());
-    refreshList = _todoitems;
+    refreshList.addAll(List<TodoItemsModel>.from(data.map((i) => TodoItemsModel.fromJson(i))).toList());
   }
 
   Future<RxList<TodoItemsModel>> remainingTodos(DateTime newdate) async {
@@ -33,10 +33,9 @@ class TodoItems extends GetxController {
     for(TodoItemsModel item in refreshList){
       if(item.deliveryTime?.compareTo(DateTime(newdate.year,newdate.month,newdate.day)) == 1)
       {
-        tempFilter.add(item);
+        _todoitems.add(item);
       }
     }
-     _todoitems = tempFilter;
     return _todoitems;
   }
 
@@ -53,6 +52,7 @@ class TodoItems extends GetxController {
 
   void initwhenDateSelection(){
     tempFilter.clear();
+    _todoitems.clear();
     tempFilter = RxList.empty(growable: true);
   }
 
